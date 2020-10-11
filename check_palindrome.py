@@ -8,7 +8,7 @@ def check_palindrome(input_str: str) -> bool:
     :return: boolean value: true
     """
     # removing spaces and special character, converting to lower case
-    input_str = re.sub('[\W_]+', '', input_str.replace(" ", "").lower())
+    input_str = re.sub('[\W_]+', '', input_str.lower())
     reverse_str = input_str[::-1]  # reverse string with slicing
     return input_str == reverse_str
 
