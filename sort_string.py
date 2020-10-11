@@ -4,7 +4,7 @@ def sort_string(input_str: str) -> str:
     :param input_str: string of words, separated by space
     :return: string of words, sorted alphabetically
     """
-    return ' '.join(sorted(input_str.split(" "), key=str.casefold))  # casefold method is used for case-less matching
+    return ' '.join(sorted(input_str.split(), key=str.casefold))  # casefold method is used for case-less matching
 
 
 if __name__ == "__main__":
